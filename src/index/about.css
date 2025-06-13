@@ -1,0 +1,15 @@
+/* Custom scrollbar cho toàn bộ project hoặc chỉ cho class cụ thể */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    background: #2d3748; /* Màu nền scrollbar */
+    border-radius: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #facc15; /* Màu thanh kéo */
+    border-radius: 8px;
+  }
+
+h1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
