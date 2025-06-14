@@ -5,7 +5,7 @@ import Avatar from "../assets/avatar.jpg"; // Thay bằng đường dẫn đến
 export default function Sidebar() {
 
     return (
-        <div className="w-72 min-h-full bg-gray-700 text-white p-6 shadow-lg rounded-2xl">
+        <div className="w-full min-h-full bg-gray-700 text-white p-6 shadow-lg rounded-2xl">
             {/* Avatar */}
             <div className="flex flex-col items-center">
                 <img
@@ -24,7 +24,15 @@ export default function Sidebar() {
 
             {/* Contact Info */}
             <div className="space-y-5 text-sm">
-                <InfoItem icon={<FaEnvelope />} label="Email" value="duy.nguyen21072003@gmail.com" />
+                <InfoItem
+                    icon={<FaEnvelope />}
+                    label="Email"
+                    value={
+                        <span className="truncate block max-w-[150px]">
+                            duy.nguyen21072003@gmail.com
+                        </span>
+                    }
+                />
                 <InfoItem icon={<FaPhoneAlt />} label="Phone" value="0819 306 878" />
                 <InfoItem icon={<FaBirthdayCake />} label="Birthday" value="June 21, 2003" />
                 <InfoItem icon={<FaMapMarkerAlt />} label="Location" value="Binh Thanh, HCM" />
