@@ -1,24 +1,26 @@
 import { FaBookOpen } from "react-icons/fa";
 const educationData = [
     {
-        school: "University School Of The Arts",
-        period: "2007 — 2008",
-        description:
-            "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.",
-    },
-    {
-        school: "New York Academy Of Art",
-        period: "2006 — 2007",
+        school: "Tien Giang High School for the Gifted",
+        period: "2018-2021",
         description:
             "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..",
     },
     {
-        school: "High School Of Art And Design",
-        period: "2002 — 2004",
+        school: "Ho Chi Minh City University of Technology (HCMUT)",
+        period: "2021 — 2025",
         description:
             "Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.",
     },
 ];
+
+const experienceData = [
+    {
+        office: "BK Coretech",
+        period: "June, 2024 - May, 2025",
+        description: "Fullstack developer"
+    }
+]
 export default function Resume() {
     return (
         <div>
@@ -52,10 +54,10 @@ export default function Resume() {
                 </div>
 
                 <div className="relative border-l border-gray-700 ml-5">
-                    {educationData.map((item, index) => (
+                    {experienceData.map((item, index) => (
                         <div key={index} className="mb-10 ml-6 relative">
                             <span className="absolute -left-8 top-1 w-4 h-4 bg-yellow-400 rounded-full border-2 border-gray-800"></span>
-                            <h3 className="text-lg font-semibold">{item.school}</h3>
+                            <h3 className="text-lg font-semibold">{item.office}</h3>
                             <span className="text-yellow-400 text-sm font-medium">{item.period}</span>
                             <p className="text-gray-300 mt-2 text-sm leading-relaxed">
                                 {item.description}
